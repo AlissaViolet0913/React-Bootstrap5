@@ -57,7 +57,7 @@ function BasicExample() {
     {/* Service section */}
     <section id="servies" className={styles.section}>
       <div className="container">
-        <div className="row">
+        <div className="row mb-4">
           <div className="col-md-8 mx-auto text-center">
             <h6 className={`${styles.heading} text-primary`}>SERVICES</h6>
             <h1 className={`${styles.heading}`}>Services</h1>
@@ -66,17 +66,76 @@ function BasicExample() {
         </div>
 
         {/* row: 横並びにする */}
+        <div className="row g-4">
+          <div className="col-lg-4 col-sm-6">
+            <div className={`${styles.service} ${styles.cardEffect}`}>
+              <div className={styles.iconbox}>
+              <i className='bx bxs-comment-detail' ></i>
+              </div>
+              <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi.</p>
+            </div>
+          </div>
+        </div>
         <div className="row">
           <div className="col-lg-4 col-sm-6">
             <div className={`${styles.service} ${styles.cardEffect}`}>
               <div className={styles.iconbox}>
               <i className='bx bxs-comment-detail' ></i>
               </div>
-              <h5>Service</h5>
+              <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi.</p>
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col-lg-4 col-sm-6">
+            <div className={`${styles.service} ${styles.cardEffect}`}>
+              <div className={styles.iconbox}>
+              <i className='bx bxs-comment-detail' ></i>
+              </div>
+              <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-4 col-sm-6">
+            <div 
+            className={`${styles.service} ${styles.cardEffect}`}>
+              <div className={styles.iconbox}>
+              <i className='bx bxs-comment-detail' ></i>
+              </div>
+              <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-4 col-sm-6">
+            <div 
+            className={`${styles.service} ${styles.cardEffect}`}>
+              <div className={styles.iconbox}>
+              <i className='bx bxs-comment-detail' ></i>
+              </div>
+              <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-lg-4 col-sm-6">
+            <div 
+            className={`${styles.service} ${styles.cardEffect}`}>
+              <div className={styles.iconbox}>
+              <i className='bx bxs-comment-detail' ></i>
+              </div>
+              <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi.</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
 

@@ -64,6 +64,7 @@
 
 .service {
   position: relative;
+  overflow: hidden; /* 溢れたものを隠す。-100%の部分を隠す */
 }
 .service::after {
   content: "";
@@ -76,6 +77,13 @@
   opacity: 0; /* 透明度。見せたくないとき*/
   transition: all 0.35s ease;
   z-index: -1;
+}
+.service:hover h5, .service:hover p {
+  color: #fff;
+}
+.service:hover .iconbox {
+  background-color: #fff;
+  color: #0d6efd;
 }
 .service:hover::after {
   opacity: 1;

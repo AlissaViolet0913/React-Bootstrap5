@@ -73,6 +73,7 @@ $white: #fff;
 
 .service{
     position: relative;
+    overflow: hidden; /* 溢れたものを隠す。-100%の部分を隠す */
 
     &::after{
         content: "";
@@ -85,6 +86,16 @@ $white: #fff;
     opacity: 0; /* 透明度。見せたくないとき*/
     transition:all 0.35s ease;
     z-index: -1;
+    }
+
+    &:hover h5,
+    &:hover p{
+        color: $white;
+    }
+
+    &:hover .iconbox{
+        background-color: $white;
+        color: $primary;
     }
 
     &:hover::after{
