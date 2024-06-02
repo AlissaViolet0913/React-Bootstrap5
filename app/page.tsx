@@ -122,8 +122,121 @@ function BasicExample() {
               </div>
             </div>
           </div>
-        
-        
+      </div>
+    </section>
+
+    {/* features section */}
+    <section className="row py-0 bg-light">
+      <div className={`col-lg-6 ${styles.colImg}`}></div>
+      <div className="col-lg-6">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-10 pt-4 offset-md-1">
+              <h6 className={`${styles.heading} text-primary`}>Why to choose us?</h6>
+              <h1 className={styles.heading}>Create your Idea</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis beatae laudantium voluptatem blanditiis nisi quidem.</p>
+
+              <div className="feature d-flex mt-5">
+                <div className={`${styles.iconbox} me-5`}>
+                <i className='bx bxs-comment-detail'></i>
+                </div>
+                <div>
+                  <h5 className={styles.heading}>Create</h5>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis cupiditate eligendi esse itaque alias perspiciatis.</p>
+                </div>
+              </div>
+              <div className="feature d-flex mt-5">
+                <div className={`${styles.iconbox} me-5`}>
+                <i className='bx bxs-comment-detail'></i>
+                </div>
+                <div>
+                  <h5 className={styles.heading}>Create</h5>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis cupiditate eligendi esse itaque alias perspiciatis.</p>
+                </div>
+              </div>
+              <div className="feature d-flex mt-5">
+                <div className={`${styles.iconbox} me-5`}>
+                <i className='bx bxs-comment-detail'></i>
+                </div>
+                <div>
+                  <h5 className={styles.heading}>Create</h5>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis cupiditate eligendi esse itaque alias perspiciatis.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* projects section */}
+    <section id="servies" className={styles.section}>
+      <div className="container">
+        <div className="row mb-4">
+          <div className="col-md-8 mx-auto text-center">
+            <h6 className={`${styles.heading} text-primary`}>SERVICES</h6>
+            <h1 className={`${styles.heading}`}>Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, praesentium.</p>
+          </div>
+        </div>
+
+        {/* row: 横並びにする */}
+        <div className="row g-4">
+            <div className="col-lg-4 col-sm-6">
+              <div className={`${styles.service} ${styles.cardEffect}`}>
+                <div className={styles.iconbox}>
+                  <i className='bx bxs-comment-detail'></i>
+                </div>
+                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className={`${styles.service} ${styles.cardEffect}`}>
+                <div className={styles.iconbox}>
+                  <i className='bx bxs-comment-detail'></i>
+                </div>
+                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className={`${styles.service} ${styles.cardEffect}`}>
+                <div className={styles.iconbox}>
+                  <i className='bx bxs-comment-detail'></i>
+                </div>
+                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className={`${styles.service} ${styles.cardEffect}`}>
+                <div className={styles.iconbox}>
+                  <i className='bx bxs-comment-detail'></i>
+                </div>
+                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className={`${styles.service} ${styles.cardEffect}`}>
+                <div className={styles.iconbox}>
+                  <i className='bx bxs-comment-detail'></i>
+                </div>
+                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-6">
+              <div className={`${styles.service} ${styles.cardEffect}`}>
+                <div className={styles.iconbox}>
+                  <i className='bx bxs-comment-detail'></i>
+                </div>
+                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
 

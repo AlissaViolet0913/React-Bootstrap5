@@ -69,6 +69,7 @@ $white: #fff;
     font-size: 32px;
     background-color: $primary;
     border-radius: 100px;
+    flex: none;
 }
 
 .service{
@@ -102,4 +103,11 @@ $white: #fff;
         opacity: 1;
         top: 0;
     }
+}
+
+.colImg{
+    background-image: url("/images/cover2.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
 }
