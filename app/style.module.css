@@ -1,17 +1,91 @@
-
-
-/* :root{
-    --primary: #0d6efd;
-    --dark: #21252f;
-    --body: #888;
-} */
-
-.bootstrap{
-    font-size: 2rem;
+@charset "UTF-8";
+.bootstrap {
+  font-size: 2rem;
 }
 
 .navLink {
-    color: #fff !important;
-    font-size: 14px;
-    font-weight: 700;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 700;
 }
+
+.hero {
+  background-image: url("/images/cover.jpg");
+  background-position: center;
+  background-size: cover; /* 画像をいっぱいに広げる */
+  background-attachment: fixed; /* 画像だけ固定して他の要素を動かす */
+  position: relative;
+  z-index: 2;
+  /* 疑似要素 */
+}
+.hero::after {
+  content: ""; /* 疑似要素には絶対必要 */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(37, 39, 71, 0.7); /*alpha: 透明度*/
+  z-index: -1;
+}
+
+.heading {
+  color: #21252f;
+  font-weight: 700;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.cardEffect {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 25px;
+  transition: all 0.35s ease;
+}
+.cardEffect:hover {
+  box-shadow: none;
+  transform: translateY(5px); /*hoverしたときにY軸が5px下がる*/
+}
+
+.iconbox {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 32px;
+  background-color: #0d6efd;
+  border-radius: 100px;
+}
+
+.service {
+  position: relative;
+  overflow: hidden; /* 溢れたものを隠す。-100%の部分を隠す */
+}
+.service::after {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-color: #0d6efd;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* 透明度。見せたくないとき*/
+  transition: all 0.35s ease;
+  z-index: -1;
+}
+.service:hover h5, .service:hover p {
+  color: #fff;
+}
+.service:hover .iconbox {
+  background-color: #fff;
+  color: #0d6efd;
+}
+.service:hover::after {
+  opacity: 1;
+  top: 0;
+}/*# sourceMappingURL=style.module.css.map */
