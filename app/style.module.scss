@@ -4,6 +4,7 @@ $primary: #0d6efd;
 $dark: #21252f;
 $body: #888;
 $white: #fff;
+$bgColor: rgba(37, 39, 71, 0.7); /*alpha: 透明度*/
 
 
 .bootstrap{
@@ -32,7 +33,7 @@ $white: #fff;
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba(37, 39, 71, 0.7); /*alpha: 透明度*/
+        background-color: $bgColor;
         z-index: -1;
     }
 }
@@ -110,4 +111,41 @@ $white: #fff;
     background-position: center;
     background-size: cover;
     min-height: 500px;
+}
+
+// projects design
+.project{
+    position:relative;
+    overflow: hidden;
+
+    & .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $bgColor;
+        padding: 30px;
+        display: flex;
+        align-items: flex-end;
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    &:hover .overlay{
+        transition: scale(1.1);
+        opacity: 1;
+    }
+
+    &:hover .img{
+        transition: scale(1.1);
+    }
+
+    & .img{
+        transition: all 0.4s ease;
+    }
+}
+
+.img{
+    width: 100%;
 }
