@@ -170,73 +170,86 @@ function BasicExample() {
     </section>
 
     {/* projects section */}
-    <section id="servies" className={styles.section}>
-      <div className="container">
+    <section id="projects" className={styles.section}>
+      {/* container-fluid: 画面の大きさを変えても常にwidthを100%に保つ */}
+      <div className="container-fluid">
         <div className="row mb-4">
           <div className="col-md-8 mx-auto text-center">
-            <h6 className={`${styles.heading} text-primary`}>SERVICES</h6>
-            <h1 className={`${styles.heading}`}>Services</h1>
+            <h6 className={`${styles.heading} text-primary`}>Projects</h6>
+            <h1 className={`${styles.heading}`}>Recent Projects</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, praesentium.</p>
           </div>
         </div>
 
-        {/* row: 横並びにする */}
-        <div className="row g-4">
-            <div className="col-lg-4 col-sm-6">
-              <div className={`${styles.service} ${styles.cardEffect}`}>
-                <div className={styles.iconbox}>
-                  <i className='bx bxs-comment-detail'></i>
+        <div className="row g-3">
+          <div className="col-lg-4 col-sm-6">
+            <div className={styles.project}>
+              <img src="/images/pro1.jpg" alt="projectImage" className={styles.img}/>
+              <div className={styles.overlay}>
+                <div>
+                  <h4 className={`${styles.heading} text-white`}>Project Title</h4>
+                  <h6 className={`${styles.heading} text-white`}>Website Design</h6>
                 </div>
-                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className={`${styles.service} ${styles.cardEffect}`}>
-                <div className={styles.iconbox}>
-                  <i className='bx bxs-comment-detail'></i>
-                </div>
-                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className={`${styles.service} ${styles.cardEffect}`}>
-                <div className={styles.iconbox}>
-                  <i className='bx bxs-comment-detail'></i>
-                </div>
-                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className={`${styles.service} ${styles.cardEffect}`}>
-                <div className={styles.iconbox}>
-                  <i className='bx bxs-comment-detail'></i>
-                </div>
-                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className={`${styles.service} ${styles.cardEffect}`}>
-                <div className={styles.iconbox}>
-                  <i className='bx bxs-comment-detail'></i>
-                </div>
-                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className={`${styles.service} ${styles.cardEffect}`}>
-                <div className={styles.iconbox}>
-                  <i className='bx bxs-comment-detail'></i>
-                </div>
-                <h5 className={`${styles.heading} mt-4 mb-2`}>Service</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sunt expedita, dolorem natus quae eligendi。</p>
               </div>
             </div>
           </div>
+          <div className="col-lg-4 col-sm-6">
+            <div className={styles.project}>
+              <img src="/images/pro2.jpg" alt="projectImage" className={styles.img}/>
+              <div className={styles.overlay}>
+                <div>
+                  <h4 className={`${styles.heading} text-white`}>Project Title</h4>
+                  <h6 className={`${styles.heading} text-white`}>Website Design</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-6">
+            <div className={styles.project}>
+              <img src="/images/pro3.jpg" alt="projectImage" className={styles.img}/>
+              <div className={styles.overlay}>
+                <div>
+                  <h4 className={`${styles.heading} text-white`}>Project Title</h4>
+                  <h6 className={`${styles.heading} text-white`}>Website Design</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-6">
+            <div className={styles.project}>
+              <img src="/images/pro4.jpg" alt="projectImage" className={styles.img}/>
+              <div className={styles.overlay}>
+                <div>
+                  <h4 className={`${styles.heading} text-white`}>Project Title</h4>
+                  <h6 className={`${styles.heading} text-white`}>Website Design</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-6">
+            <div className={styles.project}>
+              <img src="/images/pro5.jpg" alt="projectImage" className={styles.img}/>
+              <div className={styles.overlay}>
+                <div>
+                  <h4 className={`${styles.heading} text-white`}>Project Title</h4>
+                  <h6 className={`${styles.heading} text-white`}>Website Design</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-sm-6">
+            <div className={styles.project}>
+              <img src="/images/pro6.jpg" alt="projectImage" className={styles.img}/>
+              <div className={styles.overlay}>
+                <div>
+                  <h4 className={`${styles.heading} text-white`}>Project Title</h4>
+                  <h6 className={`${styles.heading} text-white`}>Website Design</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
